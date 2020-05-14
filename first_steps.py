@@ -5,7 +5,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Read .xlsx file with pandas
-fname = r'C:\Users\03125327\Desktop\potentialTreeList_v1.xlsx'
+
+# If the data is in the same folder as the python script, use this:
+fname = 'potentialTreeList_v1.xlsx'
+# If the data is somewhere else, specify the whole path:
+# fname = r'C:\Users\03125327\Desktop\potentialTreeList_v1.xlsx' # absolute position of the .xlsx file.
 data = pd.read_excel(fname)
 
 # Convert pandas DataFrame to a NetworkX graph variable.
